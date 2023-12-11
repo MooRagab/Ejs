@@ -1,0 +1,63 @@
+<%- include('./shared/header')%>
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>EJS SignUp</title>
+    </head>
+
+    <body>
+        <div class="container p-5">
+            <div class="main text-center my-2 w-75 ">
+                <h1>Register Now</h1>
+            </div>
+
+            <div class="Form w-100 m-auto p-5">
+                <form action="/auth/signup" method="POST">
+                    <% if (errMessage?.length) { %>
+                        <div class="form-group my-2 alert alert-danger">
+                            <%= errMessage%>
+                        </div>
+                        <% } %>
+                            <div class="form-group my-2">
+                                <input class="form-control" value="<%= oldInputs?.userName%>" type="text" placeholder="UserName" name="userName">
+                            </div>
+                            <% if (validationErr?.includes('userName')) { %>
+                                <div class="alert alert-danger my-2 p-2 text-center">
+                                    <p>In-valid userName</p>
+                                </div>
+                            <% } %>
+                            <div class="form-group my-2">
+                                <input class="form-control" value="<%= oldInputs?.email%>" type="email" placeholder="Email" name="email">
+                            </div>
+                            <% if (validationErr?.includes('email')) { %>
+                                <div class="alert alert-danger my-2 p-2 text-center">
+                                    <p>In-valid Email</p>
+                                </div>
+                            <% } %>
+                            <div class="form-group my-2">
+                                <input class="form-control" value="<%= oldInputs?.password%>" type="password" placeholder="Password"
+                                    name="password">
+                            </div>
+                            <% if (validationErr?.includes('password')) { %>
+                                <div class="alert alert-danger my-2 p-2 text-center">
+                                    <p>In-valid Password</p>
+                                </div>
+                            <% } %>
+                            <div class="form-group my-2">
+                                <input class="form-control" value="<%= oldInputs?.cPassword%>" type="password" placeholder="Confirmation-Password"
+                                    name="cPassword">
+                            </div>
+                            <% if (validationErr?.includes('cPassword')) { %>
+                                <div class="alert alert-danger my-2 p-2 text-center">
+                                    <p>In-valid Confirmation Password</p>
+                                </div>
+                            <% } %>
+                            <div class="form-group my-2">
+                                <button type="submit" class="btn btn-info w-25">Signup</button>
+                                <p>Already Have Account? <a style="color: #4caf50;" href="/auth/signin">LogIn</a></p>
+                            </div>
+                </form>
+            </div>
+        </div>
+
+        <%- include('./shared/script')%>
+            <script src="/js/signup.js"></script>
+            <%- include('./shared/footer')%>

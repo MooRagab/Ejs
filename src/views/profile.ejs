@@ -1,0 +1,31 @@
+<%- include('./shared/header') %>
+<link rel="stylesheet" href="/css/profile.css">
+<title>EJS Profile</title>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        
+        <div class="main text-center mb-4">
+            <div class="text-right fixed-top float-end m-4">
+                <a class="btn-logout btn-danger my-2 p-2" href="/auth/logout">Logout</a>
+                <a class="btn-logout btn-danger my-2 p-2" href="/post">Add Post</a>
+            </div>
+            <h2 class="display-4">Profile Page</h2>
+        </div>
+        <div class="form w-75 mx-auto p-5 bg-white rounded shadow">
+            <form action="/user/profile/pic" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="image" class="form-label">Choose Profile Picture</label>
+                    <input class="form-control" type="file" id="image" name="image">
+                </div>
+                <div class="form-group my-2">
+                    <button class="btn-upload btn-info my-2" type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include('./shared/script') %>
+    <script src="./js/signup.js"></script>
+    <%- include('./shared/footer') %>
+</body>
+</html>

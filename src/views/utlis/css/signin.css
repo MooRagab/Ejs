@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: linear-gradient(135deg, #b2ebf2, #71c573, #8bc34a, #cddc39);
+  background-size: 200% 200%;
+  animation: Gradient 10s ease infinite;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: #2e2c2c8a; 
+  background: url("path/to/your/pattern.jpg") repeat;
+  padding: 20px;
+  border-radius: 15px;
+  transform: rotate(0deg);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.498);
+  transition: transform 0.3s ease-in-out;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1:hover {
+  transform: scale(1.05);
+  color: #2e2c2c;
+}
+
+.Form {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 50px auto;
+}
+
+.Form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form form .form-group {
+  margin-bottom: 20px;
+}
+
+.Form form .form-group input {
+  background-color: #f8f8f8;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.Form form .form-group input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.Form form .form-group button {
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Form form .form-group button:hover {
+  background-color: #45a049;
+}
+
+.Form form .alert {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.Form form .alert-danger {
+  background-color: #ffd6d6;
+  color: #dc3545;
+}

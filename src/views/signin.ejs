@@ -1,0 +1,48 @@
+<%- include('./shared/header')%>
+    <link rel="stylesheet" href="/css/signin.css">
+    <title>EJS LogIn</title>
+    </head>
+
+    <body>
+
+        <div class="container p-5">
+            <div class="main text-center my-2 w-75">
+                <h1>Welcome Back</h1>
+            </div>
+            <div class="Form w-100 m-auto p-5">
+                <form action="/auth/signin" method="POST">
+                    <% if (errMessage?.length) { %>
+                        <div class="form-group my-2 alert alert-danger">
+                            <%= errMessage%>
+                        </div>
+                        <% } %>
+                            <div class="form-group my-2">
+                                <input class="form-control" value="<%=oldInputs?.email%>" type="email"
+                                    placeholder="Email" name="email">
+                            </div>
+                            <% if (validationErr?.includes('email')) { %>
+                                <div class="alert alert-danger my-2 p-2 text-center">
+                                    <p>In-valid Email</p>
+                                </div>
+                                <% } %>
+                                    <div class="form-group my-2">
+                                        <input class="form-control" value="<%=oldInputs?.password%>" type="password"
+                                            placeholder="Password" name="password">
+                                    </div>
+                                    <% if (validationErr?.includes('password')) { %>
+                                        <div class="alert alert-danger my-2 p-2 text-center">
+                                            <p>In-valid Password</p>
+                                        </div>
+                                        <% } %>
+                                            <div class="form-group my-2">
+                                                <button type="submit" class="btn btn-info w-25">Login</button>
+                                                <p>Don't Have Account? <a  style="color: #4caf50 ;" href="/auth/">Register Now</a></p>
+
+                                            </div>
+                </form>
+            </div>
+        </div>
+
+        <%- include('./shared/script')%>
+            <script src="./js/signup.js"></script>
+            <%- include('./shared/footer')%>

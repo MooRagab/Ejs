@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background: linear-gradient(135deg, #b2ebf2, #a5d6a7, #8bc34a, #cddc39);
+  background-size: 200% 200%;
+  animation: Gradient 10s ease infinite;
+}
+
+h1 {
+  font-family: "Bangers", cursive;
+  text-align: center;
+  color: #2e2c2c8a; 
+  background: url("path/to/your/pattern.jpg") repeat;
+  padding: 20px;
+  border-radius: 15px;
+  transform: rotate(0deg);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.498);
+  transition: transform 0.3s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.05);
+  color: #2e2c2c;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.458);
+  background-color: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  margin-bottom: 15px;
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.alert {
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  background-color: #ff0000;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  transform: scale(1.2);
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+
+a.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+a.btn-primary {
+  background-color: #4caf50;
+}
+
+a.btn-danger {
+  background-color: #ff0000;
+}
+
+.alerts-danger {
+  background-color: #d9534f;
+  color: #fff;
+  text-align: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.alerts-danger:hover {
+  background-color: #c9302c;
+}
