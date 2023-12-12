@@ -42,15 +42,17 @@ npm install
 
 - **Post Creation:** Seamlessly navigate to the posts page at `localhost:5000/post/` using [Express](https://www.npmjs.com/package/express). [Multer](https://www.npmjs.com/package/multer) and [Cloudinary](https://www.npmjs.com/package/cloudinary) handle multimedia uploads, allowing users to share images, videos, or GIFs in their posts.
 
-- **Post Management:** Users have the ability to update and delete their own posts from the dashboard. This functionality is facilitated by [mongoose](https://www.npmjs.com/package/mongoose), enabling efficient interaction with the MongoDB database.
-
  ![image](https://github.com/MooRagab/Ejs/assets/79729746/d6bc0e71-42fe-4429-be88-8fee9f1fcceb)
+
+- **Post Management:** Users have the ability to update and delete their own posts from the dashboard. This functionality is facilitated by [mongoose](https://www.npmjs.com/package/mongoose), enabling efficient interaction with the MongoDB database.
+- 
+![image](https://github.com/MooRagab/Ejs/assets/79729746/2f9303b1-f68b-491b-9cf3-9408593bce47)
 
 - **News Feed:** On the posts page, users can explore and interact with posts from other users. This dynamic community experience is facilitated by [Express](https://www.npmjs.com/package/express) and [EJS](https://www.npmjs.com/package/ejs), providing real-time updates.
 
 - **Secure Signout:** The dashboard includes a signout button powered by [Express](https://www.npmjs.com/package/express) sessions, ensuring a secure logout process.
 
-- **Customized Styling:** The aesthetic appeal of [Your Project Name] is crafted using [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), creating an engaging and user-friendly interface.
+- **Customized Styling:** The aesthetic appeal of is crafted using [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), creating an engaging and user-friendly interface.
 
 - **Model-View-Controller (MVC) Architecture:** Follow the MVC architecture for better organization and scalability, ensuring a clean separation of concerns in your project structure.
 
