@@ -12,7 +12,7 @@ List of external packages and libraries your project depends on:
 - [connect-flash](https://www.npmjs.com/package/connect-flash) - Flash messages middleware.
 - [connect-mongodb-session](https://www.npmjs.com/package/connect-mongodb-session) - MongoDB session store for Express.
 - [dotenv](https://www.npmjs.com/package/dotenv) - Loads environment variables from a `.env` file.
-- [ejs](https://www.npmjs.com/package/ejs) - Embedded JavaScript templating.
+- [EJS](https://www.npmjs.com/package/ejs) - Embedded JavaScript templating.
 - [express](https://www.npmjs.com/package/express) - Web application framework for Node.js.
 - [express-session](https://www.npmjs.com/package/express-session) - Session middleware for Express.
 - [joi](https://www.npmjs.com/package/joi) - Object schema validation.
@@ -27,21 +27,25 @@ Please make sure to install these dependencies using the following command:
 npm install
 ```
 ## Features
-- **User Authentication:** Start by creating an account through the secure signup route at `localhost:5000/auth/`. User passwords are hashed using [bcryptjs](https://www.npmjs.com/package/bcryptjs) for enhanced security.
+- **User Authentication:** Begin by creating a secure account through the signup route at `localhost:5000/auth/`. Passwords are hashed using [bcryptjs](https://www.npmjs.com/package/bcryptjs), enhancing overall user security.
 
 ![image](https://github.com/MooRagab/Ejs/assets/79729746/6d853cf4-e5f3-4258-bd14-6a9f2e3789dd)
 
-- **Email Confirmation:** After signup, users receive a confirmation email to the provided address. Only after confirming the email can users log in, ensuring a verified and secure user base.
 
-- **Dashboard Customization:** Upon login at `localhost:5000/auth/login`, users access a personalized dashboard where they can add a profile picture to enhance their account.
+- **Email Confirmation:** After signup, users receive a confirmation email through [Nodemailer](https://www.npmjs.com/package/nodemailer). This ensures that only verified users can log in, maintaining a secure user base.
 
-- **Post Creation:** From the dashboard, users can seamlessly navigate to the posts page at `localhost:5000/post/`, where they can add multimedia-rich posts, including images, videos, or GIFs.
+- **Dashboard Customization:** Upon login at `localhost:5000/auth/login`, users access a personalized dashboard powered by [Express](https://www.npmjs.com/package/express) (a web application framework for Node.js) and [EJS](https://www.npmjs.com/package/ejs). Here, they can customize their account, including adding a profile picture.
 
-- **Post Management:** Users have the ability to update and delete their own posts from the dashboard, providing control over their content.
+- **Post Creation:** Seamlessly navigate to the posts page at `localhost:5000/post/` using [Express](https://www.npmjs.com/package/express). [Multer](https://www.npmjs.com/package/multer) and [Cloudinary](https://www.npmjs.com/package/cloudinary) handle multimedia uploads, allowing users to share images, videos, or GIFs in their posts.
 
-- **News Feed:** On the posts page, users can explore and interact with posts from other users, fostering a vibrant and connected community.
+- **Post Management:** Users have the ability to update and delete their own posts from the dashboard. This functionality is facilitated by [mongoose](https://www.npmjs.com/package/mongoose), enabling efficient interaction with the MongoDB database.
 
-- **Secure Signout:** The dashboard includes a signout button, ensuring a secure logout process.
+- **News Feed:** On the posts page, users can explore and interact with posts from other users. This dynamic community experience is facilitated by [Express](https://www.npmjs.com/package/express) and [EJS](https://www.npmjs.com/package/ejs), providing real-time updates.
 
+- **Secure Signout:** The dashboard includes a signout button powered by [Express](https://www.npmjs.com/package/express) sessions, ensuring a secure logout process.
+
+- **Customized Styling:** The aesthetic appeal of [Your Project Name] is crafted using [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), creating an engaging and user-friendly interface.
+
+- **Model-View-Controller (MVC) Architecture:** Follow the MVC architecture for better organization and scalability, ensuring a clean separation of concerns in your project structure.
 
 
