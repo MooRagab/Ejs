@@ -56,4 +56,32 @@ npm install
 
 - **Model-View-Controller (MVC) Architecture:** Follow the MVC architecture for better organization and scalability, ensuring a clean separation of concerns in your project structure.
 
+### Technologies Used
 
+- **Backend Framework:** [Express](https://www.npmjs.com/package/express) (Web application framework for Node.js)
+  
+- **Node.js:** The foundation of the server-side functionality, [Node.js](https://nodejs.org/).
+
+- **Database:** [MongoDB](https://www.mongodb.com/), managed through [Mongoose](https://www.npmjs.com/package/mongoose)
+  
+- **Authentication:** Token-based user authentication powered by [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) and secure password hashing with [bcryptjs](https://www.npmjs.com/package/bcryptjs).
+
+- **Session Management:** Utilize [express-session](https://www.npmjs.com/package/express-session) for seamless session management.
+
+- **Frontend Templating:** [EJS](https://www.npmjs.com/package/ejs) for efficient and dynamic HTML rendering.
+
+- **Frontend Styling:** [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) for custom styling, ensuring a visually appealing and intuitive user interface.
+
+- **Middleware:** [Multer](https://www.npmjs.com/package/multer) for handling multipart form-data during file uploads.
+
+- **Email Communication:** [Nodemailer](https://www.npmjs.com/package/nodemailer) for email communication functionalities.
+
+- **Validation:** Ensure data integrity with [Joi](https://www.npmjs.com/package/joi) for object schema validation.
+
+- **Flash Messages:** Implement user notifications with [connect-flash](https://www.npmjs.com/package/connect-flash) for flash messages.
+
+- **Session Store:** Enhance session management with [connect-mongodb-session](https://www.npmjs.com/package/connect-mongodb-session) for storing sessions in MongoDB.
+
+- **Environment Configuration:** Securely manage environment variables with [dotenv](https://www.npmjs.com/package/dotenv).
+
+- **Cloud Storage:** Leverage [Cloudinary](https://www.npmjs.com/package/cloudinary) for efficient cloud-based storage of multimedia content.
