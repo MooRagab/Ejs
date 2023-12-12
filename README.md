@@ -34,11 +34,17 @@ npm install
 
 - **Email Confirmation:** After signup, users receive a confirmation email through [Nodemailer](https://www.npmjs.com/package/nodemailer). This ensures that only verified users can log in, maintaining a secure user base.
 
-- **Dashboard Customization:** Upon login at `localhost:5000/auth/login`, users access a personalized dashboard powered by [Express](https://www.npmjs.com/package/express) (a web application framework for Node.js) and [EJS](https://www.npmjs.com/package/ejs). Here, they can customize their account, including adding a profile picture.
+  ![image](https://github.com/MooRagab/Ejs/assets/79729746/9ff86bea-37c2-463c-a66f-e53ff591ceba)
+
+- **Dashboard Customization:** Upon login at `localhost:5000/auth/signin`, users access a personalized dashboard powered by [Express](https://www.npmjs.com/package/express) (a web application framework for Node.js) and [EJS](https://www.npmjs.com/package/ejs). Here, they can customize their account, including adding a profile picture.
+
+![image](https://github.com/MooRagab/Ejs/assets/79729746/ba0d5cc3-987e-4cc2-b2f0-59b2fdd96a12)
 
 - **Post Creation:** Seamlessly navigate to the posts page at `localhost:5000/post/` using [Express](https://www.npmjs.com/package/express). [Multer](https://www.npmjs.com/package/multer) and [Cloudinary](https://www.npmjs.com/package/cloudinary) handle multimedia uploads, allowing users to share images, videos, or GIFs in their posts.
 
 - **Post Management:** Users have the ability to update and delete their own posts from the dashboard. This functionality is facilitated by [mongoose](https://www.npmjs.com/package/mongoose), enabling efficient interaction with the MongoDB database.
+
+ ![image](https://github.com/MooRagab/Ejs/assets/79729746/d6bc0e71-42fe-4429-be88-8fee9f1fcceb)
 
 - **News Feed:** On the posts page, users can explore and interact with posts from other users. This dynamic community experience is facilitated by [Express](https://www.npmjs.com/package/express) and [EJS](https://www.npmjs.com/package/ejs), providing real-time updates.
 
