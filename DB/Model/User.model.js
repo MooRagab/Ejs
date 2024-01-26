@@ -13,9 +13,9 @@ const userSchema = new Schema({
     confirmEmail: { type: Boolean,default:false},
 
 }, {
-    timestamps: true
+    timestamps: true   
 })
-
+ 
 const userModel =  model('User' , userSchema)
 
 export default  userModel

@@ -9,16 +9,19 @@ import connectDB from "./DB/connection.js";
 import session from "express-session";
 import mongoSession from "connect-mongodb-session";
 import flash from "connect-flash";
+import cors from 'cors'
+
 const MongoDBStore = mongoSession(session);
 
 var store = new MongoDBStore({
   uri: process.env.DBURI,
   collection: "mySessions",
-});
+}); 
 const app = express();
 const port = 5000;
 app.use(express.static(path.join(__dirname, "./src/views/utlis")));
 app.use(express.urlencoded({ extended: true }));
+app.use(cors({}))
 app.use(
   session({
     secret: process.env.SESSIONSECRET,
@@ -33,7 +36,6 @@ app.use(
 app.use(flash());
 app.set("views", path.join(__dirname, "./src/views"));
 app.set("view engine", "ejs");
-app.get("/", (req, res) => res.send("Hello World!"));
 
 app.use("/auth", indexRouter.authRouter);
 app.use("/user", indexRouter.userRouter);
